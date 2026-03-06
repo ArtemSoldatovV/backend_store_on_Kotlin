@@ -21,9 +21,9 @@ class ProductsService_test {
     companion object {
         @JvmStatic
         val postgres = PostgreSQLContainer<Nothing>("postgres:13").apply {
-            withDatabaseName("testdb")
-            withUsername("user")
-            withPassword("password")
+            withDatabaseName("store_db")
+            withUsername("store_user")
+            withPassword("store123")
             start()
         }
 
