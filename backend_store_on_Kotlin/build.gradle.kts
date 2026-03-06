@@ -30,6 +30,17 @@ dependencies {
 
     implementation("redis.clients:jedis:4.3.1")
 
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+
+    testImplementation("org.testcontainers:testcontainers:1.18.3")
+
+    testImplementation("org.testcontainers:postgresql:1.18.3")
+    testImplementation("org.testcontainers:kafka:1.18.3")
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
 }
 
 tasks.test {

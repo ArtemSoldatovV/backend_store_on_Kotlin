@@ -4,13 +4,10 @@ import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
-import io.ktor.server.routing.*
 import org.example.domain.users.CreateUsersRequest
 import org.example.domain.users.LoginRequest
-import org.example.repository.Orders_itemsRepository
 import org.example.repository.UserRepository
 import org.example.service.authorization.GenerateToken
-import org.koin.ktor.ext.inject
 
 class UsersService {
     private val repository = UserRepository()
